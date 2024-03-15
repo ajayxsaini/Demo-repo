@@ -1,0 +1,69 @@
+What is Git?
+Free and open source version control system 
+What is a Version control system?
+A system that keeps track of files or projects 
+It allows you to revert selected files to a previous state, revert the entrie project to a previous statek compare chagnes over time, see who last modified somehting os that we can know what might be causing a problem, or what is th eissue, who made it, and when with the details .
+
+There are two types of VCS
+1. Centralized 
+2. Distributed (preferred)
+
+Why git?
+Free 
+Open source
+Scalable
+Superfast
+Cheap branching and merging 
+
+What is GitHub
+GitHub is a web-based hosting service for git repositories. 
+You can use git without Github, but you cannot use GitHub without Git.
+
+
+Local repositories
+Every VCS tool provides a private workplace as a working copy. Developers make changes in their private workplace and after commit, these changes become a part of the repository. Git takes it one step further by providing them a private copy of the whole repository. Users can perform many operations with this repository such as add file, remove file, rename file, move file, commit changes and many more. 
+
+WOrking directory and staging area or index: An intermediate area where commits can be formatted and reviewed before completing the commit. 
+
+push : sned a change to another repository(may require perimission)
+
+pull: grab a change from a repository
+
+Blobs : Blob stands for Binary Large Object. Each version of a file is represented by a blob. A blob holds the file data but doesn't contain any metadata about the file. It is a binary file, and in Git database, it is named a SHA1 hash of that file. In Git, files are not addressed by names. Everything is content-addressed.
+
+Trees: Tree is an object, which represents directory. It holds blobs as well as other sub-directory. A tree is a binary file that stores references to blobs and trees which are also named as SHA1 hash of the tree object 
+
+Commits 
+Commit holds the current state of the repository. A commit is also named by SHA1 hash. 
+Commit object = a node of the linked list. 
+Every commit object has a pointer to the parent commit object
+From a given commit, you can traverse back by looking at the parent pointer to view the history of the commit.
+If a commit has multiple parent commits, then that particular commit has been created by merging two branches. 
+
+
+Git commands 
+Clone: Bring a repository hosted somewhere like GitHub into a folder or your local machine 
+Add: Track your files and changes in Git
+Commit : Save your files in git 
+Push : Upload your commits to git repo, like GitHub
+Pull: Download changes from a remote repository to your local repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

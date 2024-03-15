@@ -1,0 +1,24 @@
+Terminal is nothing but another interface to do things on your machine
+pwd - print working directory   
+cd stands for Change directory
+cd .. means to go one step up in the file directory going back to the folder. 
+ls(list filess) - used for lisiting all the files in the current folder. ex : ls
+mkdir - stands for make directory and is used for making a new folder. ex : mkdir cohort 
+touch - this command is used to make empty files (could be any type) in a desired folder. ex:  touch index.txt  
+cat - shows the content of the current file . ex: cat invalid.txt
+vi - used to edit file  
+mv - used to move files or folders
+cp - used to move files or folders (use -r when you copy a folder into another )
+
+nvm - node version manager 
+npm - node packages manager
+why we need npm? To install external dependencies such as express, reactjs etc...
+
+
+Bash commands 
+Bash: It is a command line interpreter language that lets you interact with operating system 
+When you open a terminal what you basically see is a prompt and then you can give it instructions to operating to execute .
+The job of the shell or Command line interface is to understand or interpret the promt that we give as user and then it is executed by the kernel. 
+
+ls -l : list and details of all the directories 
+ls -r : list of all the subdirectories 

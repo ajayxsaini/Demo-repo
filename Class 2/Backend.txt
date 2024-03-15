@@ -1,0 +1,97 @@
+Http | Node.js
+-What is ECMAScript?
+-EcmaScript is a scripting language specification on which javascript is based. 
+-It serves as the guideline or rules for the scripting language design
+-i.e whoever is writing a compiler can make sure they are following the guidelines 
+
+
+-What is JavaScript? (The implementation)
+-JavaScript is a scripting language that is an implementation of ECMAScript.
+-JavaScript has some more things that are not necessarily in ECMAScript (like setTimout()) 
+-Anyone can make a compiler, for example V8(google chrome/chromium), SpiderMonkey - Used by Firefox - C + Rust 
+-V8 and SpiderMonkey are used for to interpret JavaScript and have to update the compiler according to ECMAScript standard.
+-Even Node.js uses V8 engine
+-V8 is an opensource JavaScript engine developed by the chromium project for Google chrome. It is written in C++ which compiles javascript into machine code which improves performance
+
+-What is Node.js?
+-Node.js is a run-time environment. 
+-Node.js is used for backend for people who already knew JavaScript. 
+- Is is used to create an HTTP server
+
+
+-What is Bun?
+-It is competitor of Node.js
+-It is written in Zig 
+-It outperforms Node.js
+-It is faster compared to Node.js.
+
+-What is an HTTP server? (HyperText transfer protocol)
+- A protocol that is defined for machines to communicate
+- Specifically for websites, it is the most common way for your website's frontend to talk to its backend 
+-The thing which responds to your request. 
+- Some code which follows HTTP protocol 
+
+
+-HTTP protocol
+-In the end, its the client throwing some information at the server. Server doing something with the information server responding back with the final result.
+-think of them as function where client send them an argument
+-Rather than calling a function using its name, the client uses a URL. 
+-Rather than the function body, the server does something with the request. 
+-Rather than the function returning a value, the server responds with some data.
+
+-Things that happen in your browser after you fire this request 
+1. Browser parses the URL 
+2. Does a DNS (Domain name service) Lookup (converts google.com to an IP)
+3. Establishes a connection to the IP (does handshake..)
+
+
+
+-What is DNS resolutions?
+URLs are just like contact in your phone
+in the end, they map to an IP.
+If your ever want to buy a URL of your own, you will need to point it to an IP
+
+
+-Things that happen on your server after the request recieved. 
+1. You get the inputs (route, body, headers)
+2. You do some logic on the input, calculate the output 
+3. You return the output body, headers and status code.
+
+HTTP Protocol
+1. get
+2. post 
+3. put
+4. delete
+
+
+-What is the common status codes the backend responds with?
+1. 200 - Everything is okay
+2. 404 - Page/ round not found 
+3. 403 - Authentication issues 
+4. 500 - Internal server error
+
+ 
+
+
+-Things that client needs to worry about. 
+-HTTP (client side)
+-Protocol (HTTPS)
+-Address(URL, IP, PORT)
+-Route
+-Headers Body Query Params
+-Method 
+
+-Thing server needs to worry about 
+-HTTP (server side)
+-Response Headers
+-Response body
+-Status Codes 
+
+-What is Frontend and backend?
+- JavaScript, HTML, CSS is frontend (clients). 
+- The response that comes from the backend (server).
+- For writing backend code we use java, rust, golang.
+
+
+-Goal for class
+-Writing an http server in node.js. 
